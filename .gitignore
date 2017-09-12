@@ -1,0 +1,9 @@
+/vendor
+/src/Resource
+.DS_Store
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
