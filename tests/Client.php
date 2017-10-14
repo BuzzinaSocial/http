@@ -1,11 +1,11 @@
 <?php
 
-namespace HubToDo\Http\Tests;
+namespace BuzzinaSocial\Http\Tests;
 
 /**
  * Class ClientTest.
  *
- * @package HubToDo\Http\Tests
+ * @package BuzzinaSocial\Http\Tests
  */
 class ClientTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,8 +14,8 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->client = $this->getMockForAbstractClass(\HubToDo\Http\Client::class);
-        $this->client_reflection = new \ReflectionClass(\HubToDo\Http\Client::class);
+        $this->client = $this->getMockForAbstractClass(\BuzzinaSocial\Http\Client::class);
+        $this->client_reflection = new \ReflectionClass(\BuzzinaSocial\Http\Client::class);
     }
 
     public function testConstructorCallsInternalMethods()
@@ -26,16 +26,16 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     public function testIfTraitJsonRenderAsInstantiated()
     {
         $this->assertTrue(trait_exists(\BuzzinaSocial\Traits\JsonRender::class));
-        $this->assertTrue(method_exists(\HubToDo\Http\Client::class, 'jsonEncode'));
-        $this->assertTrue(method_exists(\HubToDo\Http\Client::class, 'jsonDecode'));
+        $this->assertTrue(method_exists(\BuzzinaSocial\Http\Client::class, 'jsonEncode'));
+        $this->assertTrue(method_exists(\BuzzinaSocial\Http\Client::class, 'jsonDecode'));
     }
 
     public function testSituationClass()
     {
         $this->assertTrue($this->client_reflection->isAbstract());
         $this->assertTrue($this->client_reflection->inNamespace());
-        $this->assertEquals($this->client_reflection->getName(), \HubToDo\Http\Client::class);
-        $this->assertEquals($this->client_reflection->getNamespaceName(), 'HubToDo\Http');
+        $this->assertEquals($this->client_reflection->getName(), \BuzzinaSocial\Http\Client::class);
+        $this->assertEquals($this->client_reflection->getNamespaceName(), 'BuzzinaSocial\Http');
         $this->assertFalse($this->client_reflection->getParentClass());
         $this->assertEquals('Client', $this->client_reflection->getShortName());
     }

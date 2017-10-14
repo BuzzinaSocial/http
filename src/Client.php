@@ -1,6 +1,6 @@
 <?php
 
-namespace HubToDo\Http;
+namespace BuzzinaSocial\Http;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Response;
@@ -10,7 +10,7 @@ use function GuzzleHttp\Psr7\stream_for;
 /**
  * Class Client.
  *
- * @package HubToDo\Http
+ * @package BuzzinaSocial\Http
  */
 abstract class Client
 {

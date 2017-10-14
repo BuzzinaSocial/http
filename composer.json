@@ -1,12 +1,12 @@
 {
-  "name": "hubtodo/http",
+  "name": "buzzina-social/http",
   "description": "Http Client",
   "keywords": ["libraries", "Traits"],
   "license": "MIT",
   "type": "libraries",
   "support": {
-    "issues": "https://github.com/HubToDo/sdk-php-http/issues",
-    "source": "https://github.com/HubToDo/sdk-php-http"
+    "issues": "https://github.com/BuzzinaSocial/sdk-php-http/issues",
+    "source": "https://github.com/BuzzinaSocial/sdk-php-http"
   },
   "authors": [
     {
@@ -26,12 +26,12 @@
   },
   "autoload": {
     "psr-4": {
-      "HubToDo\\Http\\": "src/"
+      "BuzzinaSocial\\Http\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "HubToDo\\Http\\Tests\\": "tests/"
+      "BuzzinaSocial\\Http\\Tests\\": "tests/"
     }
   }
 }

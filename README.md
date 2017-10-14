@@ -2,7 +2,7 @@
 
 ### Installing
 ```
-composer require hubtodo/http
+composer require BuzzinaSocial/http
 ```
 
 ### Using
@@ -10,7 +10,7 @@ composer require hubtodo/http
 ```php
 require __DIR__.'/vendor/autoload.php';
 
-class MoreClass extends \HubToDo\Http\Client
+class MoreClass extends \BuzzinaSocial\Http\Client
 {
     public function __construct()
     {
