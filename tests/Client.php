@@ -25,7 +25,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function testIfTraitJsonRenderAsInstantiated()
     {
-        $this->assertTrue(trait_exists(\HubToDo\Traits\JsonRender::class));
+        $this->assertTrue(trait_exists(\BuzzinaSocial\Traits\JsonRender::class));
         $this->assertTrue(method_exists(\HubToDo\Http\Client::class, 'jsonEncode'));
         $this->assertTrue(method_exists(\HubToDo\Http\Client::class, 'jsonDecode'));
     }

@@ -16,7 +16,7 @@
   ],
   "require": {
     "php": ">=7.1",
-    "hubtodo/traits": "^0.0",
+    "buzzina-social/traits": "^1.0",
     "guzzlehttp/guzzle": "^6.3"
   },
   "require-dev": {

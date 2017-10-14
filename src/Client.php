@@ -4,7 +4,7 @@ namespace HubToDo\Http;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Response;
-use HubToDo\Traits\JsonRender;
+use BuzzinaSocial\Traits\JsonRender;
 use function GuzzleHttp\Psr7\stream_for;
 
 /**
