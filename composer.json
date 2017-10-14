@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "libraries",
   "support": {
-    "issues": "https://github.com/BuzzinaSocial/sdk-php-http/issues",
-    "source": "https://github.com/BuzzinaSocial/sdk-php-http"
+    "issues": "https://github.com/BuzzinaSocial/http/issues",
+    "source": "https://github.com/BuzzinaSocial/http"
   },
   "authors": [
     {
