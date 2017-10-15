@@ -222,7 +222,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function testRequestPost()
     {
-        $request = $this->client->post('https://httpbin.org/post', json_encode(['foo' => 'bar']));
+        $request = $this->client->post('https://httpbin.org/post', ['foo' => 'bar']);
 
         $this->assertInstanceOf(\GuzzleHttp\Psr7\Response::class, $request);
     }
