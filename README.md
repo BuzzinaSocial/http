@@ -2,7 +2,7 @@
 
 ### Installing
 ```
-composer require BuzzinaSocial/http
+composer require buzzina-social/http
 ```
 
 ### Using
