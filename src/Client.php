@@ -107,7 +107,7 @@ abstract class Client
     public function put($path, $body): Response
     {
         return $this->http_client->request(self::PUT, $path, [
-            'body' => stream_for($body)
+            'form_params' => $body
         ]);
     }
 
