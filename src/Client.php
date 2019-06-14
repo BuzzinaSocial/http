@@ -92,7 +92,7 @@ abstract class Client
     public function post($path, $body): Response
     {
         return $this->http_client->request(self::POST, $path, [
-            'form_params' => $body
+            'json' => $body
         ]);
     }
 
@@ -107,7 +107,7 @@ abstract class Client
     public function put($path, $body): Response
     {
         return $this->http_client->request(self::PUT, $path, [
-            'form_params' => $body
+            'json' => $body
         ]);
     }
 
